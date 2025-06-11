@@ -2,7 +2,7 @@
 ## 轻松发现和访问局域网内的 AgentBox 设备。
 
 ## 📦 工具简介
-AgentBox_Device_Discovery Tool 是由 lzwcai 开发的一款局域网设备发现工具。
+AgentBox_Device_Discovery Tool 是为灵泽万川 AgentBox 开发的一款开源的局域网设备发现工具。
 它能自动扫描网络内的 AgentBox 设备并提供直观的服务访问界面。
 
 Download：https://github.com/starhui70520/AgentBox_Device_Discovery/releases/tag/v0.1.0-alpha
@@ -33,6 +33,6 @@ Download：https://github.com/starhui70520/AgentBox_Device_Discovery/releases/ta
 此设备发现工具仅为辅助工具，强烈建议用户记录并收藏常用服务的地址和端口。
 
 ### 📫 联系方式
-如有建议或问题，请联系作者 lzwcai。
+如有建议或问题，请联系作者
 
 
