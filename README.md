@@ -23,7 +23,7 @@ Download：https://github.com/starhui70520/AgentBox_Device_Discovery/releases/ta
 ![alt text](./res/step.2.png)
 
 
-第三步：登录服务界面
+### 第三步：登录服务界面
 浏览器会跳转到所选服务的登录页面。
 请输入你的用户名和密码进行登录。
 
