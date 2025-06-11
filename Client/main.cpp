@@ -73,15 +73,28 @@ private slots:
 
             QObject::connect(serviceButton, &QPushButton::clicked, [&dialog, port, url]() {
                 QString finalUrl;
-                if (port == "8080") {
-                    finalUrl = "https://192.168.2.236:8080/";  // 固定主页URL
-                } else {
-                    finalUrl = url + ":" + port;
+                QString baseUrl = url;
+
+                if (!baseUrl.startsWith("http")) {
+                    baseUrl = "http://" + baseUrl;
                 }
+
+                QUrl parsedUrl(baseUrl);
+
+                if (port == "8080") {
+                    parsedUrl.setScheme("https");
+                    parsedUrl.setPort(8080);
+                } else {
+                    parsedUrl.setScheme("http");
+                    parsedUrl.setPort(port.toInt());
+                }
+
+                finalUrl = parsedUrl.toString();
                 qInfo() << "Opening URL:" << finalUrl;
                 QDesktopServices::openUrl(QUrl(finalUrl));
-                dialog.accept(); // 关闭对话框
+                dialog.accept();
             });
+        }
         }
 
         // 添加一个取消按钮
