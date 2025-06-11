@@ -1,8 +1,3 @@
-# AgentBox_Device_Discovery
-lzwcai AgentBox_Device_Discovery Tool
-
-使用方法
-
 # AgentBox Device Discovery Tool
 ## 轻松发现和访问局域网内的 AgentBox 设备。
 
